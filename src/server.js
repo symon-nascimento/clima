@@ -12,7 +12,7 @@ app.all('/:city', async (req, resp) => {
 
     const cityName = req.params.city
 
-    const { data } = await axios(`https://api.hgbrasil.com/weather?format=json&key=9cf64c5c&city_name=${cityName}`)
+    const { data } = await axios(`https://api.hgbrasil.com/weather?format=json&key=6cc4a4ed&city_name=${cityName}`)
 
     // Desestruturando o objeto recebido e filtrando...
     const {temp, description, humidity, wind_speedy, forecast} = data.results
